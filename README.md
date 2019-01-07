@@ -14,12 +14,12 @@ ADD index.php /var/www/html/index.php
 RUN chmod a+rx index.php
 ```
 ```
-$ docker build -t php-apache .
+$ docker build -t apache-phpe .
 ```
 The newly created image may be used in the below demonstration or tagged to your DTR and deployed from there.
 ```
-$ docker tag php-apache ${DTR_URL}/demos/php-apache 
-$ docker push ${DTR_URL}/demos/php-apache 
+$ docker tag apache-php ${DTR_URL}/demos/apache-php 
+$ docker push ${DTR_URL}/demos/apache-php 
 ```
 
 # Deploy the yaml

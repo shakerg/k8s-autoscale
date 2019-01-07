@@ -73,7 +73,7 @@ Note: It may take a few minutes to stabilize the number of replicas. Since the a
 Stop load
 We will finish our example by stopping the user load.
 
-In the terminal where we started the while-loop, terminate the load generation by typing "<Ctrl> + C".
+In the terminal where we started the while-loop, terminate the load generation by typing Ctrl + C.
 
 Then we will verify the result state (after a minute or so):
 ```

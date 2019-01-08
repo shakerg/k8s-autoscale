@@ -15,7 +15,7 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    targetPort: 8080
+    targetPort: 80 ## change to 8080 for docker-demo
   selector:
     run: apache-php
   type: NodePort
@@ -38,11 +38,11 @@ spec:
         run: apache-php
     spec:
       containers:
-      - image: ehazlett/docker-demo
-      # - image: dtr.docker.ee/engineering/apache-php:latest
+      # - image: ehazlett/docker-demo
+      - image: dtr.docker.ee/engineering/apache-php:latest
         name: apache-php
         ports:
-        - containerPort: 8080
+        - containerPort: 80 ## change to 8080 for docker-demo
           protocol: TCP
         resources:
           limits:

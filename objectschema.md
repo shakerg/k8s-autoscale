@@ -1,0 +1,63 @@
+```
+apiVersion:
+kind:
+metadata:
+  annotations:
+    [string]:
+  clusterName:
+  creationTimestamp:
+  deletionGracePeriodSeconds:
+  deletionTimestamp:
+  finalizers:
+  - [string]:
+  generateName:
+  generation:
+  initializers:
+    pending:
+    - name:
+    result:
+      apiVersion:
+      code:
+      details:
+        causes:
+        group:
+        kind:
+        name:
+        retryAfterSeconds:
+        uid:
+      kind:
+      message:
+      metadata:
+        resourceVersion:
+        selfLink:
+      reason:
+      status:
+  labels:
+    [string]:
+  name:
+  namespace:
+  ownerReferences:
+  - apiVersion:
+    blockOwnerDeletion:
+    controller:
+    kind:
+    name:
+    uid:
+  resourceVersion:
+  selfLink:
+  uid:
+spec:
+  maxReplicas:
+  minReplicas:
+  scaleTargetRef:
+    apiVersion:
+    kind:
+    name:
+  targetCPUUtilizationPercentage:
+status:
+  currentCPUUtilizationPercentage:
+  currentReplicas:
+  desiredReplicas:
+  lastScaleTime:
+  observedGeneration:
+```

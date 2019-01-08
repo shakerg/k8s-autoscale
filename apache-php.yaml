@@ -15,7 +15,7 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    targetPort: 80 ## change to 8080 for docker-demo
+    targetPort: 8080 ## change to 8080 for docker-demo
   selector:
     run: apache-php
   type: NodePort
@@ -38,17 +38,17 @@ spec:
         run: apache-php
     spec:
       containers:
-      # - image: ehazlett/docker-demo
-      - image: dtr.docker.ee/engineering/apache-php:latest
+      - image: ehazlett/docker-demo
+      # - image: dtr.docker.ee/engineering/apache-php:latest
         name: apache-php
         ports:
-        - containerPort: 80 ## change to 8080 for docker-demo
+        - containerPort: 8080 ## change to 8080 for docker-demo
           protocol: TCP
         resources:
           limits:
-            cpu: 200m
+            cpu: 100m
           requests:
-            cpu: 50m
+            cpu: 25m
 ---
 kind: Ingress
 apiVersion: extensions/v1beta1

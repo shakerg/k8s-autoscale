@@ -4,6 +4,12 @@ Simply apply all the files in metric-server/1.8+
 ```
 kubectl apply -f metric-server/1.8+/...
 ```
+```
+# Note
+HPA waits for 3 minutes after the last scale-up events to allow metrics to stabilize.
+HPA waits for 5 minutes from the last scale-down event to avoid autoscaler thrashing.
+```
+
 # Create Horizontal Pod Auotscaler (yaml)
 Now that the server is running we can either build an apache-php container and deploy that (See the Dockerfile) or deploy the included yaml which now pulls in ehazlett/docker-demo as a scaling container visualizer. 
 

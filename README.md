@@ -1,5 +1,5 @@
 # Prereq: Metric-Server
-You must install the metric server in order for data to be collected for use by hpa (Horizonal Pod Autoscaler)
+You must install the metric server in order for data to be collected for use by hpa (Horizonal Pod Autoscaler).
 Simply apply all the files in metric-server/1.8+
 ```
 kubectl apply -f metric-server/1.8+/...

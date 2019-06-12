@@ -60,7 +60,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: "apache.kube.docker.ee" # layer7 ingress host
+  - host: "hpa.apps.hotcuppa.co" # layer7 ingress host
     http:
       paths:
       - path: /
